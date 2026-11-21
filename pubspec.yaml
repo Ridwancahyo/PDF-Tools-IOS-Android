@@ -1,0 +1,53 @@
+name: pdf_studio_pro
+description: "PDF Studio Pro — 33 Alat PDF, Konversi Dokumen & AI Studio Background (100% Offline iOS & Android)."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.14.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  material_ui: ^1.11.1
+  cupertino_ui: ^1.1.7
+  cupertino_icons: ^2.0.0
+
+  # Core PDF, Raster & Image Engine
+  syncfusion_flutter_pdf: ^35.2.12
+  printing: ^5.15.1
+  image: ^4.13.1
+  flutter_image_compress: ^2.5.1
+
+  # On-Device AI Background Segmentation (100% Offline)
+  google_mlkit_selfie_segmentation: ^1.0.3
+
+  # Office OOXML & Archive (DOCX / XLSX / PPTX / ZIP)
+  archive: ^4.7.1
+  xml: ^7.0.1
+
+  # Files, Photos, Export & Signature
+  file_picker: ^13.4.0
+  image_picker: ^1.2.4
+  path_provider: ^2.1.5
+  share_plus: ^13.3.1
+  signature: ^6.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/app_logo.jpg
+
+flutter_launcher_icons:
+  ios: true
+  android: true
+  image_path: "assets/images/app_logo.jpg"
+  remove_alpha_ios: true
+  adaptive_icon_background: "#FAF8F2"
+  adaptive_icon_foreground: "assets/images/app_logo.jpg"
